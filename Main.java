@@ -43,7 +43,7 @@ public class Main {
 
     static void thaoTacDangKy(List<User> users) {
 
-        System.out.println("----Dang dang ky----");
+        System.out.println("----Dang ky----");
         System.out.println();
         System.out.print("Nhap username: ");
         String username = scan.nextLine();
@@ -51,7 +51,7 @@ public class Main {
         System.out.print("Nhap email: ");
         String email = scan.nextLine();
         System.out.println();
-        System.out.print("Nhap pass: ");
+        System.out.print("Nhap password: ");
         String pass = scan.nextLine();
 
         boolean check = true;
@@ -71,7 +71,7 @@ public class Main {
             }
 
             if (!checkPass(pass)) {
-                System.out.println("Pass khong dung dinh dang !!!");
+                System.out.println("Mat khau khong dung dinh dang !!!");
                 check = false;
                 thaoTacDangKy(users);
                 break;
