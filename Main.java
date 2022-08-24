@@ -11,7 +11,7 @@ public class Main {
             "^[a-zA-Z][\\w-]+@([\\w]+\\.[\\w]+|[\\w]+\\.[\\w]{2,}\\.[\\w]{2,})$";
 
     static String PASSWORD_PATTERN =
-            "^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()-[{}]:;',?/*~$^+=<>]).{7,15}$";
+            "^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()-_[{}]:;',?/*~$^+=<>]).{7,15}$";
 
     public static void main(String[] args) {
 
@@ -172,7 +172,7 @@ public class Main {
             thaoTacDoiPass(user);
         }
         user.setPassword(pass);
-        System.out.println("Doi pass thanh cong");
+        System.out.println("Doi mat khau thanh cong");
         return;
     }
 
